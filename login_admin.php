@@ -20,7 +20,7 @@ if (isset($_POST['login_admin'])) {
   }
 
   if (count($errors) == 0) {
-  	$password = sha1($password);
+  	$password = ($password);
   	$query = "SELECT * FROM admin WHERE admin_id='$username' AND admin_password='$password'";
   	$results = mysqli_query($db, $query);
   	if (mysqli_num_rows($results) == 1) {

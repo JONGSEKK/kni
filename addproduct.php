@@ -2,7 +2,7 @@
 require_once("dbcontroller.php");
 $db_handle = new DBController();
 if(!empty($_POST["submit"])) {
-    $query = "INSERT INTO product(product_id,product_name,product_unitprice,product_availability) VALUES ('10' ,'".$_POST["product_name"]."','".$_POST["price"]."','".$_POST["product_availability"]."')";
+    $query = "INSERT INTO product(product_id,product_name,product_unitprice,product_availability) VALUES ('".$_POST["product_id"]."' ,'".$_POST["product_name"]."','".$_POST["price"]."','".$_POST["product_availability"]."')";
     $result = $db_handle->executeQuery($query);
 	if(!$result){
 		$message = "Problem in Editing! Please Retry!";
@@ -92,6 +92,9 @@ input[type=submit]:hover {
 <label style="padding-top:20px;">Product Name</label>
 <span id="name-info" class="info"></span><br/>
 <input type="text" name="product_name" id="product_name" class="demoInputBox" value="" required/>
+<label style="padding-top:20px;">Product ID</label>
+<span id="name-info" class="info"></span><br/>
+<input type="text" name="product_id" id="product_id" class="demoInputBox" value="" required/>
 <label style="padding-top:20px;">Price</label>
 <span id="name-info" class="info"></span><br/>
 <input type="text" name="price" id="price" class="demoInputBox" value="" required/>

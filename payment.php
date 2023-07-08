@@ -24,7 +24,7 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="index.php" class="navbar-brand">KNI Shop</a>
+				<a href="index.php" class="navbar-brand"><img src="/images/mudah_small_resize.png" style="height: 40px; margin-top: -5px" alt=""></a>
 					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>

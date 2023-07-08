@@ -11,7 +11,7 @@ body {
   width: 30%;
   margin: 50px auto 0px;
   color: white;
-  background: #46200B;
+  background: rgb(117, 1, 1);
   text-align: center;
   border: 1px solid #46200B;
   border-bottom: none;
@@ -22,7 +22,7 @@ form, .content {
   width: 30%;
   margin: 0px auto;
   padding: 20px;
-  border: 5px solid #46200B;
+  border: 5px solid rgb(117, 1, 1);
   background: white;
   border-radius: 0px 0px 10px 10px;
 }
@@ -46,7 +46,7 @@ form, .content {
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: #46200B;
+  background: rgb(117, 1, 1);
   border: none;
   border-radius: 5px;
 }

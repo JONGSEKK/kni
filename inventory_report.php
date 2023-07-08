@@ -115,12 +115,6 @@
 								<li class="nav-item">
                   <a class="nav-link" href="inventory_report.php"> Product</a>
                 </li>
-								<li class="nav-item">
-                  <a class="nav-link" href="orderlist.php"> Order</a>
-                </li>
-								<li class="nav-item">
-                  <a class="nav-link" href="payment_report.php"> Payment</a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="feedback.php">Inquiry</a>
                 </li>
@@ -140,7 +134,6 @@
 			<center>
         	  	<table width="780px" cellspacing="0" cellpadding="5">
                    	  <tr bgcolor="#46200B" >
-                        <th style="color: #ffffff" width="170" align="center">Product Image </th>
                        	<th style="color: #ffffff" width="162" align="center">Product Name</th>
                    	  	<th style="color: #ffffff" width="82" align="center">Unit Price</th>
 					  	<th style="color: #ffffff" width="109" align="center">Availability</th>
@@ -166,8 +159,6 @@
 												if ($result->num_rows > 0) {
 												    // output data of each row
 												    while($row = $result->fetch_assoc()) {
-                              $image_data = $row["picture"];
-                              $encoded_image = base64_encode($image_data);
                               $product_name=$row["product_name"];
                               $product_unitprice=$row["product_unitprice"];
                               if($row["product_availability"]==1)
@@ -178,7 +169,7 @@
                                 $product_availability = "Out of stock";
                               }
 
-												        echo "<td align='left'><img src='data:image/jpeg;base64,{$encoded_image}' width='50' /></td><td><p>"
+												        echo "<td><p>"
                                  . $row["product_name"]. "</p></td><td>"
                                   . $row["product_unitprice"]. "</td><td>"
                                    . $product_availability. "</td>

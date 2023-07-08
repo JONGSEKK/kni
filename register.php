@@ -16,7 +16,7 @@
                 alert('Please complete the reCAPTCHA.');
                 return;
             }
-            
+			
             // Submit the form if reCAPTCHA is completed
             //document.getElementById("registrationForm").submit();
         }

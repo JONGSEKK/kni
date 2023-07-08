@@ -285,12 +285,6 @@
 								<li class="nav-item">
                   <a class="nav-link" href="orderlist.php"> Order</a>
                 </li>
-								<li class="nav-item">
-                  <a class="nav-link" href="payment_report.php"> Payment</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="feedback.php">Inquiry</a>
-                </li>
               </ul>
               <div class="quote_btn-container">
                 <form class="form-inline">
